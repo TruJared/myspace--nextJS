@@ -1,7 +1,7 @@
 'use client'
 
 import "./globals.css";
-import NavMenu from "../components/NavMenu";
+import NavMenu from "../components/NavMenu/NavMenu";
 import Footer from "../components/Footer";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";

@@ -2,7 +2,7 @@
 
 import { useSession } from "next-auth/react"
 
-export default function AuthCheck({ children }: { children: React.ReactNode }) {
+export default function AuthCheck({ children, message }: { children: React.ReactNode, message?: string }) {
     const { data: session, status } = useSession();
 
     console.log(session, status)
@@ -10,6 +10,6 @@ export default function AuthCheck({ children }: { children: React.ReactNode }) {
     if (status === 'authenticated') {
         return <>{children}</>
     } else {
-        return <></>
+        return <>{message}</>
     }
 }
