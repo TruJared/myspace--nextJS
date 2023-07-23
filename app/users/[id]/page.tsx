@@ -30,6 +30,10 @@ export default async function UserProfile({ params }: Props) {
       <h3>Bio</h3>
       <p>{bio}</p>
 
+      {/* TODO debug why this is not working */}
+      {/* convert this use actions */}
+
+      <FollowButton targetUserId={id} />
     </div>
   );
 }
